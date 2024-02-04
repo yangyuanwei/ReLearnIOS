@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @required
 - (NSString *)getSomeValue:(NSString *)str;
 
+@property(strong, nonatomic)  NSString* age;
+
 @end
 
 @interface NextViewController : UIViewController

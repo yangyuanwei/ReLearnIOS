@@ -67,4 +67,6 @@
 }
 
 
+@synthesize age;
+
 @end

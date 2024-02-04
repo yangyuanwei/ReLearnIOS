@@ -23,6 +23,7 @@
 		43F937692B6B73C000F6D243 /* MyNotication.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F937682B6B73C000F6D243 /* MyNotication.m */; };
 		43F9376C2B6B73D100F6D243 /* MyNoticationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F9376B2B6B73D100F6D243 /* MyNoticationCenter.m */; };
 		43F9376F2B6B94B600F6D243 /* MyNoticationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F9376E2B6B94B600F6D243 /* MyNoticationModel.m */; };
+		43F937732B6F3E0600F6D243 /* RuntimeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F937722B6F3E0600F6D243 /* RuntimeObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,8 @@
 		43F9376B2B6B73D100F6D243 /* MyNoticationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNoticationCenter.m; sourceTree = "<group>"; };
 		43F9376D2B6B94B600F6D243 /* MyNoticationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyNoticationModel.h; sourceTree = "<group>"; };
 		43F9376E2B6B94B600F6D243 /* MyNoticationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNoticationModel.m; sourceTree = "<group>"; };
+		43F937712B6F3E0600F6D243 /* RuntimeObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeObject.h; sourceTree = "<group>"; };
+		43F937722B6F3E0600F6D243 /* RuntimeObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,7 @@
 		43AC738F2B6A45FC0001785F /* ReLearn_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				43F937702B6F3DEC00F6D243 /* Runtime */,
 				43F937662B6B737300F6D243 /* MyNotication */,
 				43AC73B52B6A5BB60001785F /* MyIndexTableView */,
 				43AC73902B6A45FC0001785F /* AppDelegate.h */,
@@ -135,6 +139,15 @@
 				43F9376E2B6B94B600F6D243 /* MyNoticationModel.m */,
 			);
 			path = MyNotication;
+			sourceTree = "<group>";
+		};
+		43F937702B6F3DEC00F6D243 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				43F937712B6F3E0600F6D243 /* RuntimeObject.h */,
+				43F937722B6F3E0600F6D243 /* RuntimeObject.m */,
+			);
+			path = Runtime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +225,7 @@
 				43AC73922B6A45FC0001785F /* AppDelegate.m in Sources */,
 				43AC73AB2B6A46940001785F /* Person.m in Sources */,
 				43AC73B12B6A47E60001785F /* Techer.m in Sources */,
+				43F937732B6F3E0600F6D243 /* RuntimeObject.m in Sources */,
 				43AC73A32B6A45FD0001785F /* main.m in Sources */,
 				43AC73B42B6A4BA00001785F /* NextViewController.m in Sources */,
 				43F9376C2B6B73D100F6D243 /* MyNoticationCenter.m in Sources */,
