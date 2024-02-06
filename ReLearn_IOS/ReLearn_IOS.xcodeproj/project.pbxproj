@@ -20,6 +20,8 @@
 		43AC73B42B6A4BA00001785F /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC73B32B6A4BA00001785F /* NextViewController.m */; };
 		43AC73B82B6A5C370001785F /* ReusePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC73B72B6A5C370001785F /* ReusePool.m */; };
 		43AC73BB2B6A5DAD0001785F /* IndexTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43AC73BA2B6A5DAD0001785F /* IndexTableView.m */; };
+		43D874F92B7205A000355EBD /* UserCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D874F82B7205A000355EBD /* UserCenter.m */; };
+		43D874FD2B720AE200355EBD /* GroupObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D874FC2B720AE200355EBD /* GroupObject.m */; };
 		43F937692B6B73C000F6D243 /* MyNotication.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F937682B6B73C000F6D243 /* MyNotication.m */; };
 		43F9376C2B6B73D100F6D243 /* MyNoticationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F9376B2B6B73D100F6D243 /* MyNoticationCenter.m */; };
 		43F9376F2B6B94B600F6D243 /* MyNoticationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F9376E2B6B94B600F6D243 /* MyNoticationModel.m */; };
@@ -51,6 +53,10 @@
 		43AC73B72B6A5C370001785F /* ReusePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReusePool.m; sourceTree = "<group>"; };
 		43AC73B92B6A5DAD0001785F /* IndexTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexTableView.h; sourceTree = "<group>"; };
 		43AC73BA2B6A5DAD0001785F /* IndexTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexTableView.m; sourceTree = "<group>"; };
+		43D874F72B7205A000355EBD /* UserCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserCenter.h; sourceTree = "<group>"; };
+		43D874F82B7205A000355EBD /* UserCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserCenter.m; sourceTree = "<group>"; };
+		43D874FB2B720AE200355EBD /* GroupObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupObject.h; sourceTree = "<group>"; };
+		43D874FC2B720AE200355EBD /* GroupObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupObject.m; sourceTree = "<group>"; };
 		43F937672B6B73C000F6D243 /* MyNotication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyNotication.h; sourceTree = "<group>"; };
 		43F937682B6B73C000F6D243 /* MyNotication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNotication.m; sourceTree = "<group>"; };
 		43F9376A2B6B73D100F6D243 /* MyNoticationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyNoticationCenter.h; sourceTree = "<group>"; };
@@ -91,6 +97,8 @@
 		43AC738F2B6A45FC0001785F /* ReLearn_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				43D874F52B72055500355EBD /* GCD */,
+				43F937742B707C7100F6D243 /* WeakTimer */,
 				43F937702B6F3DEC00F6D243 /* Runtime */,
 				43F937662B6B737300F6D243 /* MyNotication */,
 				43AC73B52B6A5BB60001785F /* MyIndexTableView */,
@@ -128,6 +136,33 @@
 			path = MyIndexTableView;
 			sourceTree = "<group>";
 		};
+		43D874F52B72055500355EBD /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				43D874FA2B720ACC00355EBD /* Group */,
+				43D874F62B72056800355EBD /* Barrier */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		43D874F62B72056800355EBD /* Barrier */ = {
+			isa = PBXGroup;
+			children = (
+				43D874F72B7205A000355EBD /* UserCenter.h */,
+				43D874F82B7205A000355EBD /* UserCenter.m */,
+			);
+			path = Barrier;
+			sourceTree = "<group>";
+		};
+		43D874FA2B720ACC00355EBD /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				43D874FB2B720AE200355EBD /* GroupObject.h */,
+				43D874FC2B720AE200355EBD /* GroupObject.m */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
 		43F937662B6B737300F6D243 /* MyNotication */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +183,13 @@
 				43F937722B6F3E0600F6D243 /* RuntimeObject.m */,
 			);
 			path = Runtime;
+			sourceTree = "<group>";
+		};
+		43F937742B707C7100F6D243 /* WeakTimer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WeakTimer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +264,7 @@
 			files = (
 				43F9376F2B6B94B600F6D243 /* MyNoticationModel.m in Sources */,
 				43AC73982B6A45FC0001785F /* ViewController.m in Sources */,
+				43D874F92B7205A000355EBD /* UserCenter.m in Sources */,
 				43AC73922B6A45FC0001785F /* AppDelegate.m in Sources */,
 				43AC73AB2B6A46940001785F /* Person.m in Sources */,
 				43AC73B12B6A47E60001785F /* Techer.m in Sources */,
@@ -231,6 +274,7 @@
 				43F9376C2B6B73D100F6D243 /* MyNoticationCenter.m in Sources */,
 				43AC73952B6A45FC0001785F /* SceneDelegate.m in Sources */,
 				43F937692B6B73C000F6D243 /* MyNotication.m in Sources */,
+				43D874FD2B720AE200355EBD /* GroupObject.m in Sources */,
 				43AC73B82B6A5C370001785F /* ReusePool.m in Sources */,
 				43AC73BB2B6A5DAD0001785F /* IndexTableView.m in Sources */,
 				43AC73AE2B6A47DA0001785F /* Student.m in Sources */,

@@ -22,20 +22,34 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.stu = [[Student alloc] init];
-    self.techer = [[Techer alloc] init];
+//    self.stu = [[Student alloc] init];
+//    self.techer = [[Techer alloc] init];
+//    
+//    if( [self.stu respondsToSelector:@selector(getPersonName)]){
+//        NSLog(@"%@",[self.stu getPersonName]) ;
+//    }
+//    
+//    if( [self.techer respondsToSelector:@selector(getPersonName)]){
+//        NSLog(@"%@",[self.techer getPersonName]) ;
+//    }
+//    
+//    [[MyNoticationCenter defaultCenter] addObserver:self selector:@selector(myNotifiti:) name:@"name" object:nil];
     
-    if( [self.stu respondsToSelector:@selector(getPersonName)]){
-        NSLog(@"%@",[self.stu getPersonName]) ;
-    }
-    
-    if( [self.techer respondsToSelector:@selector(getPersonName)]){
-        NSLog(@"%@",[self.techer getPersonName]) ;
-    }
-    
-    [[MyNoticationCenter defaultCenter] addObserver:self selector:@selector(myNotifiti:) name:@"name" object:nil];
+    NSLog(@"1");
+    dispatch_queue_t globleQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+
+    dispatch_sync(globleQueue, ^{
+        [self performSelector:@selector(printLog)
+                  withObject:nil
+                  afterDelay:0];
+       NSLog(@"3");
+    });
 }
 
+
+-(void)printLog{
+     NSLog(@"2");
+}
 
 #pragma mark --通知回调方法
 - (void)myNotifiti:(MyNotication *)notification{
